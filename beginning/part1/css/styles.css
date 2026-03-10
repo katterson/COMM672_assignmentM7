@@ -10,7 +10,6 @@ body {
     background-color: lightgrey;
     font-size: 1em;
     text-align: center;
-    /* padding: 10px; */
 }
 
 .g1 {
@@ -30,5 +29,48 @@ body {
 }
 
 .g2 .item {
+    background-color: coral;
     align-content: center;
+}
+
+.g3 {
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "aside main main main"
+        "footer footer footer footer";
+    grid-template-rows: .25fr 4fr .25fr;
+    gap: 10px;
+}
+
+header {
+    background-color: lightblue;
+    grid-area: header;
+}
+
+aside {
+    background-color: pink;
+    grid-area: aside;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    gap: 10px;
+}
+
+.articles {
+    background-color: teal;
+}
+
+.featured {
+    background-color: lightgoldenrodyellow;
+}
+
+footer {
+    background-color: grey;
+    grid-area: footer;
 }
