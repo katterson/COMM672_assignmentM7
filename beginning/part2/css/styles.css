@@ -64,6 +64,23 @@ header ul {
 nav li {
     margin: 0 1em;
 }
+
+.community {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px 350px;
+    height: 800px;
+}
+
+.event-block, img {
+    width: 250px;
+}
+
+.featured img {
+    width: 400px;
+    order: -1;
+}
+
 footer {
     text-align: center;
     background-color: #D9D9D9;
