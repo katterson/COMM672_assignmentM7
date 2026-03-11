@@ -10,7 +10,7 @@ h1 {
     margin: 1rem 0;
 }
 h2 {
-    font-size: 1.6em;
+    font-size: 1.2em;
     margin: 1rem 0;
 }
 p {
@@ -45,7 +45,7 @@ header .container {
 }
 header img {
     width: 250px;
-    margin-right: auto;
+    marin-right: auto;
 
 }
 header ul {
@@ -66,19 +66,34 @@ nav li {
 }
 
 .community {
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 500px 350px;
-    height: 800px;
+    grid-auto-rows: 2fr;
+    justify-content: center;
+    gap: 20px;
+    background-color: #e6a563;
+}  
+.hero {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
-
-.event-block, img {
-    width: 250px;
+/* .hero .featured {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: #efefef;
+} */
+.event-block span {
+    font-style: italic;
+    color: darkgray;
 }
-
-.featured img {
+.event-block img {
     width: 400px;
-    order: -1;
+}
+.event-block {
+    grid-row: 2;
+    text-align: center;
+    background-color: white;
 }
 
 footer {
