@@ -45,7 +45,7 @@ header .container {
 }
 header img {
     width: 250px;
-    marin-right: auto;
+    margin-right: auto;
 
 }
 header ul {
@@ -93,8 +93,12 @@ nav li {
 }
 .event-block {
     background-color: white;
-    text-align: left;
+    text-align: center;
     padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 
+        10px 0 20px -5px rgba(115, 115, 115, 0.75),   /* Right shadow */
+        0 10px 20px -5px rgba(115, 115, 115, 0.75);  /* Bottom shadow*/
 }
 .event-block span {
     font-style: italic;
